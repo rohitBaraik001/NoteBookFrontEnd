@@ -7,7 +7,7 @@ function Signup(props) {
     const HandleSubmit=async(e)=>{
         e.preventDefault();
         const {name,email,password}=credentials;
-        const response = await fetch("https://inotebookbackend-3y5t.onrender.com/auth.js/createuser",{
+        const response = await fetch("https://inotebookbackend-3y5t.onrender.com/api/auth.js/createuser",{
             method:"POST",
             headers:new Headers({
                 "Content-type": "application/json"
