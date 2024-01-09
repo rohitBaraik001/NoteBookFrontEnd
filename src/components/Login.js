@@ -6,7 +6,7 @@ function Login(props) {
     const navigate = useNavigate();
     const HandleSubmit=async(e)=>{
         e.preventDefault();
-        const response = await fetch("https://inotebookbackend-3y5t.onrender.com/api/auth.js/login",{
+        const response = await fetch("https://inotebookbackend-3y5t.onrender.com/auth.js/login",{
             method:"POST",
             headers:new Headers({
                 "Content-type": "application/json"
